@@ -12,11 +12,3 @@ services:
         generateValue: true
       - key: DEEPSEEK_API_KEY
         value: sk-879ea119867c48df91790c374387bcd6
-      - key: DATABASE_URL
-        fromDatabase:
-          name: ai-chat-db
-          property: connectionString
-
-databases:
-  - name: ai-chat-db
-    plan: free
